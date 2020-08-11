@@ -33,7 +33,7 @@ app.post('/calculate',(req,res)=>{
 })
 
 app.get('*',(req,res)=>{
-	res.sendFile(path.resolve('index.html'))
+	res.sendFile('index.html')
 })
 
 app.listen(port,()=>{
