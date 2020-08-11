@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <a href="https://github.com" target="_blank"><img src="../../assets/github3.png" alt="github"/></a>
+    <a href="https://github.com/blackistheneworange/profitex" target="_blank"><img src="../../assets/github3.png" alt="github"/></a>
   </footer>
 </template>
 
