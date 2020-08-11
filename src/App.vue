@@ -1,23 +1,26 @@
 <template>
   <div id="app">
-    <Header title="Profit"/>
+    <Header/>
+    <Body/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 
-import Header from './components/Header';
+import Header from './components/layouts/Header';
+import Body from './components/Body';
+import Footer from './components/layouts/Footer';
 export default {
   name: 'App',
   components:{
-  Header
+  Header,
+  Body,
+  Footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  
-}
+
 </style>
