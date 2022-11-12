@@ -31,7 +31,6 @@
     color:#fff;
     text-decoration:none;
     font-size:1.8rem;
-    font-family:Roboto;
   }
 
 </style>

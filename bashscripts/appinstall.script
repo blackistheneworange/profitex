@@ -1,0 +1,5 @@
+docker stop $(docker ps -q --filter ancestor=profitex )
+docker rmi -f $(docker images | grep 'profitex')
+cd ~/sources/profitex
+docker build . -t profitex
+docker run -p 3000:3000 -e PORT=3000 -d profitex

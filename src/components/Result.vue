@@ -29,7 +29,7 @@
 
     
   </div>
-  <hr class='my-4'/>
+  <hr class='mt-4 mb-0'/>
   </div>
 </template>
 
@@ -44,7 +44,7 @@
 <style scoped>
 
   div#result{
-    margin:70px auto;
+    margin:70px auto 0 auto;
   }
 
   h6.heading{

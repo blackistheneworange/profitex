@@ -1,0 +1,2 @@
+docker stop $(docker ps -q --filter ancestor=profitex )
+docker run -p 3000:3000 -e PORT=3000 -d profitex

@@ -3,7 +3,6 @@
     <BodyHeader/>
     <Form v-on:calculate="calculate" v-on:reset="reset"/>
     <Result v-bind:results="results"/>
-    <BodyFooter/>
   </div>
 </template>
 
@@ -14,11 +13,10 @@
   import BodyHeader from './BodyHeader';
   import Form from './Form';
   import Result from './Result';
-  import BodyFooter from './BodyFooter';
 
   export default {
     name:"Body",
-    components:{BodyHeader,Form,Result,BodyFooter},
+    components:{BodyHeader,Form,Result},
     data(){
       return{
         results:{
@@ -31,12 +29,12 @@
     methods:{
       calculate(values){
         axios.post('/calculate',values)
-	.then(res=>{
-	this.results=res.data;
-	})
-	.catch(err=>{
-	alert(err)
-	})
+        .then(res=>{
+        this.results=res.data;
+        })
+        .catch(err=>{
+        alert(err)
+        })
 
       
       },
@@ -52,7 +50,7 @@
 
 <style scoped>
   div#body{
-    margin:80px auto;
+    margin:80px auto 0 auto;
   }
 </style>
 

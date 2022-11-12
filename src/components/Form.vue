@@ -116,6 +116,7 @@
 
   .reset{
     all:unset;
+    cursor:pointer;
     font-size:0.8rem;
     text-decoration:underline;
     color:#5f80d9;
@@ -123,12 +124,16 @@
   }
   .calculate{
     all:unset;
+    cursor:pointer;
     background:#5f80d9;
     color:#fff;
     box-shadow:0 0 6px 0 #aaa;
     padding:10px 20px;
     font-weight:bold;
     border-radius:6px;
+  }
+  .calculate:focus, .calculate:hover{
+    background:#6688e5;
   }
 
   .input:focus{

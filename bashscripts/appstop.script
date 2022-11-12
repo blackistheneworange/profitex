@@ -1,0 +1,2 @@
+docker stop $(docker ps -q --filter ancestor=profitex )
+docker rmi -f $(docker images | grep 'profitex')
