@@ -5,7 +5,7 @@
   "scripts": {
     "start":"cross-env NODE_OPTIONS='--openssl-legacy-provider' node src/server",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && node src/server",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
